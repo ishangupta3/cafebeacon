@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="beaconLemonSmall.png" translatesAutoresizingMaskIntoConstraints="NO" id="l6y-uJ-47u">
+                                <rect key="frame" x="285" y="73" width="50" height="75"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="beaconIcySmall.png" translatesAutoresizingMaskIntoConstraints="NO" id="FVI-dY-lj6">
+                                <rect key="frame" x="43" y="562" width="50" height="75"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="beaconBeetrootSmall.png" translatesAutoresizingMaskIntoConstraints="NO" id="5z5-Rk-pbP">
+                                <rect key="frame" x="285" y="562" width="50" height="75"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="beaconMintSmall.png" translatesAutoresizingMaskIntoConstraints="NO" id="4dF-Rq-VHb">
+                                <rect key="frame" x="43" y="73" width="50" height="75"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="avatar.png" translatesAutoresizingMaskIntoConstraints="NO" id="aqF-h7-7R6">
+                                <rect key="frame" x="55" y="444" width="38" height="29"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="avatar.png" translatesAutoresizingMaskIntoConstraints="NO" id="v4O-pF-HFg">
+                                <rect key="frame" x="230" y="396" width="43" height="38"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="avatar.png" translatesAutoresizingMaskIntoConstraints="NO" id="BZL-Pb-BQ0">
+                                <rect key="frame" x="97" y="338" width="30" height="29"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="avatar_noarrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="uuk-Kf-QOF">
+                                <rect key="frame" x="263" y="303" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="avatar_noarrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="zLR-78-35v">
+                                <rect key="frame" x="155" y="367" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="avatar_noarrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="gVQ-PS-Dh6">
+                                <rect key="frame" x="236" y="318" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="avatar_noarrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="vVk-Ze-MQz">
+                                <rect key="frame" x="172" y="404" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="avatar_noarrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="KjL-EF-pgf">
+                                <rect key="frame" x="55" y="211" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="avatar_noarrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="ywi-dW-aFa">
+                                <rect key="frame" x="285" y="453" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="avatar_noarrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="paS-dB-iJB">
+                                <rect key="frame" x="182" y="507" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="avatar_noarrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="ptf-6L-80C">
+                                <rect key="frame" x="285" y="236" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="avatar_noarrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="rwE-6N-gh0">
+                                <rect key="frame" x="59" y="283" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="avatar_noarrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="UZR-Vg-Esz">
+                                <rect key="frame" x="123" y="444" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="avatar_noarrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="BUM-uu-hb4">
+                                <rect key="frame" x="172" y="252" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="avatar_noarrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="945-fW-yhn">
+                                <rect key="frame" x="216" y="367" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="avatar_noarrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="G1Q-3o-6EP">
+                                <rect key="frame" x="123" y="227" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="avatar_noarrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="XLp-ue-mR4">
+                                <rect key="frame" x="230" y="260" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="avatar_noarrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qjs-mz-EB5">
+                                <rect key="frame" x="138" y="309" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="avatar_noarrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="p8i-FK-Z8t">
+                                <rect key="frame" x="230" y="180" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91051775217056274" green="0.45785385370254517" blue="0.47545802593231201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FVI-dY-lj6" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="27" id="Aev-1x-Ci3"/>
+                            <constraint firstItem="l6y-uJ-47u" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="53" id="FD8-dA-exr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="l6y-uJ-47u" secondAttribute="trailing" constant="24" id="HWE-xS-2tg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5z5-Rk-pbP" secondAttribute="trailing" constant="24" id="NGW-WQ-bkZ"/>
+                            <constraint firstItem="4dF-Rq-VHb" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="53" id="RWx-eI-Fbw"/>
+                            <constraint firstItem="4dF-Rq-VHb" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="27" id="eYZ-ya-oWN"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="FVI-dY-lj6" secondAttribute="bottom" constant="30" id="qpV-io-5gc"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="5z5-Rk-pbP" secondAttribute="bottom" constant="30" id="xIx-Ac-uj0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="avatar.png" width="30" height="29"/>
+        <image name="avatar_noarrow.png" width="30" height="30"/>
+        <image name="beaconBeetrootSmall.png" width="50" height="75"/>
+        <image name="beaconIcySmall.png" width="50" height="75"/>
+        <image name="beaconLemonSmall.png" width="50" height="75"/>
+        <image name="beaconMintSmall.png" width="50" height="75"/>
+    </resources>
+</document>
