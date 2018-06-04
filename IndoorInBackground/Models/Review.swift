@@ -49,26 +49,29 @@ struct ReviewStruct {
             "groundTruth" : location,
             "date"        : date,
             "rating"      : rating,
-            "reviewText"  : reviewText,
+            "reviewText"  : reviewText
             
         ]
         
-        // this is saving it to the ground truth tabs in firebase
-        let groundtruthRef = Database.database().reference().child("groundTruth").child((Auth.auth().currentUser?.uid)!).child(self.date)
-        groundtruthRef.setValue(userGroundTruth)
-       
+     
+//        let ratingUpdate = Database.database().reference().child("predictions").child((Auth.auth().currentUser?.uid)!).child(self.date)
+//        ratingUpdate.setValue(userGroundTruth)
+        
         print(self.rating, "This is the rating")
         let ratingUpdate = Database.database().reference().child("predictions").child((Auth.auth().currentUser?.uid)!).child(self.date).child("rating")
         ratingUpdate.setValue(rating)
 
-        // changing groundtruth label from red to green
+       
          let groundTruthLabelUpdate = Database.database().reference().child("predictions").child((Auth.auth().currentUser?.uid)!).child(self.date).child("groundTruth")
         groundTruthLabelUpdate.setValue("green")
-        
+
         // changing groundtruth label from red to green
         let locationUpdate = Database.database().reference().child("predictions").child((Auth.auth().currentUser?.uid)!).child(self.date).child("mealPrediction")
         locationUpdate.setValue(location)
         
+        // adding review
+        let reviewUpdate = Database.database().reference().child("predictions").child((Auth.auth().currentUser?.uid)!).child(self.date).child("review")
+        reviewUpdate.setValue(reviewText)
         
   
         

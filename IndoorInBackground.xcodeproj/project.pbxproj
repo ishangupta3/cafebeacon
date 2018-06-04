@@ -64,6 +64,7 @@
 		CEDBBE5F2037410100E322C3 /* LoginViewControllerEstimote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewControllerEstimote.swift; sourceTree = "<group>"; };
 		CEDBBE612037433D00E322C3 /* PasswordReset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordReset.swift; sourceTree = "<group>"; };
 		CEDBBE632037457800E322C3 /* FireBaseStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireBaseStruct.swift; sourceTree = "<group>"; };
+		CEEC659A20C59E4700707C80 /* IndoorInBackground.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IndoorInBackground.entitlements; sourceTree = "<group>"; };
 		DF29B40148EA90D547F3B266 /* Pods-IndoorInBackground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IndoorInBackground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IndoorInBackground/Pods-IndoorInBackground.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +109,7 @@
 		A54E11C01EF00C7200897D19 /* IndoorInBackground */ = {
 			isa = PBXGroup;
 			children = (
+				CEEC659A20C59E4700707C80 /* IndoorInBackground.entitlements */,
 				CE1E6A05209CDBF30075BA24 /* pragmatic stuff */,
 				CE1E6A04209CDB710075BA24 /* Models */,
 				CEA41CBB208677A700D2F232 /* Login */,
@@ -243,6 +245,9 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
 								enabled = 1;
 							};
 						};
@@ -534,6 +539,7 @@
 			baseConfigurationReference = DF29B40148EA90D547F3B266 /* Pods-IndoorInBackground.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = IndoorInBackground/IndoorInBackground.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VFH547A942;
@@ -553,6 +559,7 @@
 			baseConfigurationReference = BA95F2ABE39E7911D0B67E0A /* Pods-IndoorInBackground.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = IndoorInBackground/IndoorInBackground.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VFH547A942;

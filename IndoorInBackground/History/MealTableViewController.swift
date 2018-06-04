@@ -27,7 +27,7 @@ class MealTableViewController: UITableViewController {
        loadSampleMeals()
         navigationItem.title = "Your Meals"
         //fetchPredictions()
-        runNotification()
+        //runNotification()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -216,22 +216,22 @@ class MealTableViewController: UITableViewController {
     }
     
     
-    func runNotification() {  // need to create 5 different notifications
-        
-        var date2 = DateComponents()
-        let content = UNMutableNotificationContent()
-        content.title = "How was lunch?"
-        content.body = "Write a review"
-        
-        content.sound = UNNotificationSound.default()
-        createNotification(index: 1, content: content)
-        print(date2.weekday)
-        
-        //        let trigger = UNCalendarNotificationTrigger(dateMatching: date2, repeats: true)
-        //        let request = UNNotificationRequest(identifier: "notification1", content: content, trigger: trigger)
-        //        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
-        
-    }
+//    func runNotification() {  // need to create 5 different notifications
+//
+//        var date2 = DateComponents()
+//        let content = UNMutableNotificationContent()
+//        content.title = "How was lunch?"
+//        content.body = "Write a review"
+//
+//        content.sound = UNNotificationSound.default()
+//        createNotification(index: 1, content: content)
+//        print(date2.weekday)
+//
+//        //        let trigger = UNCalendarNotificationTrigger(dateMatching: date2, repeats: true)
+//        //        let request = UNNotificationRequest(identifier: "notification1", content: content, trigger: trigger)
+//        //        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+//
+//    }
     
     
 

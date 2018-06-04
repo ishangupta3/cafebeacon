@@ -134,7 +134,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="uGw-0a-RqT">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="mMg-yI-gdM">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             <connections>
                                 <segue destination="bnR-Ed-non" kind="presentation" identifier="AddItem" id="Qz2-YQ-l9P"/>
                             </connections>
@@ -387,13 +387,6 @@
                                 <string key="text">The objective of this application is to allow the user to have a better experience with the Adobe Cafeterias. Such attributes include forecasting potential traffic, personalized food recommendations, and other respective details. For more information or inquires about this application please contact  theochar@adobe.com </string>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                 <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign Out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXf-Z2-pOV">
-                                <rect key="frame" x="37" y="509" width="102" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>

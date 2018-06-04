@@ -10,7 +10,7 @@ import FirebaseAuth
 
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, EILBackgroundIndoorLocationManagerDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, EILBackgroundIndoorLocationManagerDelegate, MessagingDelegate {
 
     var window: UIWindow?
     
@@ -63,8 +63,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate, EILBackgroundIndoorLocati
 //        window = UIWindow()
 //        window?.rootViewController = MainTabController()
 //        
-        
+        attemptRegisterNotifications(application: application)
         return true
+    }
+    
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        print("registered for notifications", deviceToken)
+    }
+    
+    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
+        print("Registered with FCM Token", fcmToken)
+    }
+    
+    private func attemptRegisterNotifications(application: UIApplication) {
+        print("attempting to register notifications")
+        
+        
+        Messaging.messaging().delegate = self
+        // user authorization notif
+        
+        let options: UNAuthorizationOptions = [.alert, .badge, .sound]
+        UNUserNotificationCenter.current().requestAuthorization(options: options) { (granted, error) in
+            if let error = error {
+                print("Failed to give authorship", error)
+                return
+            }
+            
+            if granted {
+                print("granted")
+            } else {
+                print("not granted")
+            }
+        }
+        
+        application.registerForRemoteNotifications()
+        
     }
     
     func requestNecessaryPermissions() {
@@ -165,6 +199,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, EILBackgroundIndoorLocati
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+        
+      // need to create 5 different notifications
+            
+          
+            
+            //        let trigger = UNCalendarNotificationTrigger(dateMatching: date2, repeats: true)
+            //        let request = UNNotificationRequest(identifier: "notification1", content: content, trigger: trigger)
+            //        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+            
+    
         
     }
 

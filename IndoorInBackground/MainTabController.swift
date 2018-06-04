@@ -10,12 +10,13 @@ import Foundation
 import Firebase
 import FirebaseAuth
 import UIKit
+import UserNotifications
 
 class MainTabController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        runNotification()
         
         let templateController = UINavigationController(rootViewController: WebViewTemplate())
         let palletesController = UINavigationController(rootViewController: WebViewPalletes())
@@ -63,6 +64,30 @@ class MainTabController: UITabBarController {
         
         
     }
+    
+        func runNotification() {  // need to create 5 different notifications
+    
+            var date2 = DateComponents()
+            let content = UNMutableNotificationContent()
+            content.title = "How was lunch?"
+            content.body = "Write a review"
+    
+            content.sound = UNNotificationSound.default()
+            createNotification(index: 1, content: content)
+            print(date2.weekday)
+            
+            
+            let morningContent = UNMutableNotificationContent()
+            morningContent.title = "Check out today's lunch menu"
+            morningContent.sound = UNNotificationSound.default()
+            createNotificationMorning(index: 1, content: morningContent)
+           
+    
+            //        let trigger = UNCalendarNotificationTrigger(dateMatching: date2, repeats: true)
+            //        let request = UNNotificationRequest(identifier: "notification1", content: content, trigger: trigger)
+            //        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+    
+        }
     
     
     
