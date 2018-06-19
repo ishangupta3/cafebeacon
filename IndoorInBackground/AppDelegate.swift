@@ -7,6 +7,7 @@ import UIKit
 import UserNotifications
 import Firebase
 import FirebaseAuth
+import FirebaseDatabase
 
 
 @UIApplicationMain
@@ -73,6 +74,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, EILBackgroundIndoorLocati
     }
     
     func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
+        let ref = Database.database().reference().child("tokens").child(Auth.auth().currentUser?.uid ?? "error")
+        ref.setValue(fcmToken)
         print("Registered with FCM Token", fcmToken)
     }
     
@@ -132,6 +135,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, EILBackgroundIndoorLocati
         fetchLocation.sendRequest { (location, error) in
             if let location = location {
                 self.backgroundIndoorLocationManager.startPositionUpdates(for: location)
+                print(location, "this is the location for templates")
             } else {
                 print("can't fetch location: \(error!)")
             }
@@ -139,9 +143,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, EILBackgroundIndoorLocati
             self.fetchLocationTask = UIBackgroundTaskInvalid
         }
         
-        let fetchLocationPalletes = EILRequestFetchLocation(locationIdentifier: "testpalletes123")
+        let fetchLocationPalletes = EILRequestFetchLocation(locationIdentifier: "boomboom")
         fetchLocationPalletes.sendRequest { (location, error) in
             if let location = location {
+                print(location, "THIS IS THE LOCATION")
                 self.backgroundIndoorLocationManager.startPositionUpdates(for: location)
             } else {
                 print("can't fetch location: \(error!)")
