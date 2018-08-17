@@ -1,0 +1,6 @@
+module FAQView {
+  umbrella header "FAQView-umbrella.h"
+
+  export *
+  module * { export * }
+}

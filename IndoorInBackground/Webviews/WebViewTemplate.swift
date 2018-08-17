@@ -37,7 +37,7 @@ class WebViewTemplate: UIViewController, WKUIDelegate {
     
     func loadWebsite() {
         DispatchQueue.global(qos: .userInitiated).async { // 1
-            let templateURL = URL(string: "http://san-jose.cafebonappetit.com/cafe/templates/")
+            let templateURL = URL(string: "https://san-jose.cafebonappetit.com/cafe/templates/")
             let request = URLRequest(url: templateURL!)
             DispatchQueue.main.async { // 2
                 self.templateWebView.load(request)

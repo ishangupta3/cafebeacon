@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>Cafe opt</string>
+	<string>Adobe Wellness</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.72</string>
+	<string>1.78</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
@@ -30,11 +30,11 @@
 	<key>NSBluetoothPeripheralUsageDescription</key>
 	<string>Application will connect to sensors within cafes</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>This allows us to triangulateyour location within the cafeteria while the app is terminated</string>
+	<string>Cafe App requires access to your location to automatically connect with the bluetooth sensors. Please tap "Always Allow" to continue using Cafe App properly.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Explain what value your app will bring to the user in exchange for access to their location.</string>
+	<string>Cafe App requires access to your location to automatically connect with the bluetooth sensors. Please tap "Always Allow" to continue using Cafe App properly.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>help us help you</string>
+	<string>Cafe App requires access to your location to automatically connect with the bluetooth sensors. Please tap "Always Allow" to continue using Cafe App properly.</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>bluetooth-central</string>

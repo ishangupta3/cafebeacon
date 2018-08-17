@@ -8,7 +8,7 @@
 
 import Foundation
 import Firebase
-import FirebaseDatabase
+
 import UserNotifications
 
 func getCurrentUnixTime() -> Double {
@@ -79,12 +79,6 @@ func createNotificationMorning(index: Int, content: UNNotificationContent) {
     date6.hour = 10
     date6.minute = 45      // FRIDAY
     date6.weekday = 6
-    
-    
-    
-    
-    
-    
     
     print(date2.day)
     let trigger2 = UNCalendarNotificationTrigger(dateMatching: date2, repeats: true)

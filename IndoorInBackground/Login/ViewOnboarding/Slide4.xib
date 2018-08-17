@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Slide" customModule="IndoorInBackground" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beaconBeetrootSmall.png" translatesAutoresizingMaskIntoConstraints="NO" id="qsH-R1-P1T">
+                    <rect key="frame" x="139" y="217" width="32" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="1aY-Ew-cLV"/>
+                        <constraint firstAttribute="height" constant="56" id="u3Z-nk-qMu"/>
+                    </constraints>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="beaconMintSmall.png" translatesAutoresizingMaskIntoConstraints="NO" id="cvu-s5-0u9">
+                    <rect key="frame" x="232" y="264" width="50" height="31"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="beaconIcySmall.png" translatesAutoresizingMaskIntoConstraints="NO" id="CCi-F7-HUR">
+                    <rect key="frame" x="354" y="217" width="40" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="Zrb-dJ-bUK"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bluetooth" translatesAutoresizingMaskIntoConstraints="NO" id="ZHO-yA-2Uk">
+                    <rect key="frame" x="102" y="63" width="209" height="125"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="170" id="AHh-Et-lK7"/>
+                        <constraint firstAttribute="height" constant="125" id="c5x-7J-1Jd"/>
+                    </constraints>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="beaconLemonSmall.png" translatesAutoresizingMaskIntoConstraints="NO" id="Y0J-8e-mNA">
+                    <rect key="frame" x="48" y="264" width="43" height="31"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There are bluetooth sensors located in the cafes, which communicate with this app through a geofence" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYs-r5-040">
+                    <rect key="frame" x="24" y="357" width="366" height="206"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="206" id="fme-2k-BSJ"/>
+                        <constraint firstAttribute="width" constant="327" id="uyN-2u-D7W"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="26"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.17862744629999999" green="0.81155323980000005" blue="0.6000211835" alpha="0.81474743149999995" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="qsH-R1-P1T" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="139" id="04X-oa-YTh"/>
+                <constraint firstItem="qsH-R1-P1T" firstAttribute="top" secondItem="CCi-F7-HUR" secondAttribute="top" id="29j-ds-YcM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZHO-yA-2Uk" secondAttribute="trailing" constant="103" id="6JY-To-Lq3"/>
+                <constraint firstItem="Y0J-8e-mNA" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="244" id="CgW-hc-xSy"/>
+                <constraint firstItem="ZHO-yA-2Uk" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="43" id="DNC-Lo-rqH"/>
+                <constraint firstItem="Y0J-8e-mNA" firstAttribute="top" secondItem="cvu-s5-0u9" secondAttribute="top" id="Hd1-HF-MRh"/>
+                <constraint firstItem="qsH-R1-P1T" firstAttribute="top" secondItem="ZHO-yA-2Uk" secondAttribute="bottom" constant="29" id="Nwd-lr-9Tu"/>
+                <constraint firstItem="ZHO-yA-2Uk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="102" id="Ojg-N4-AlZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="WYs-r5-040" secondAttribute="trailing" constant="24" id="Rau-cz-2LY"/>
+                <constraint firstItem="WYs-r5-040" firstAttribute="top" secondItem="qsH-R1-P1T" secondAttribute="bottom" constant="84" id="Rwd-mb-PXe"/>
+                <constraint firstItem="WYs-r5-040" firstAttribute="top" secondItem="CCi-F7-HUR" secondAttribute="bottom" constant="91" id="Sax-oA-hl8"/>
+                <constraint firstItem="WYs-r5-040" firstAttribute="top" secondItem="cvu-s5-0u9" secondAttribute="bottom" constant="62" id="ZIa-30-wFK"/>
+                <constraint firstItem="qsH-R1-P1T" firstAttribute="leading" secondItem="Y0J-8e-mNA" secondAttribute="trailing" constant="48" id="bgm-SL-off"/>
+                <constraint firstItem="Y0J-8e-mNA" firstAttribute="leading" secondItem="WYs-r5-040" secondAttribute="leading" constant="24" id="ctT-f9-G52"/>
+                <constraint firstItem="WYs-r5-040" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="lyD-Y6-xw9"/>
+                <constraint firstItem="CCi-F7-HUR" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="my2-9s-UEu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Y0J-8e-mNA" secondAttribute="bottom" constant="441" id="nFa-ys-3Lk"/>
+                <constraint firstItem="WYs-r5-040" firstAttribute="top" secondItem="Y0J-8e-mNA" secondAttribute="bottom" constant="62" id="pe3-0Z-hlf"/>
+                <constraint firstItem="cvu-s5-0u9" firstAttribute="leading" secondItem="qsH-R1-P1T" secondAttribute="trailing" constant="61" id="uYO-5P-qZN"/>
+                <constraint firstItem="Y0J-8e-mNA" firstAttribute="bottom" secondItem="cvu-s5-0u9" secondAttribute="bottom" id="uck-l7-jmn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="31.5" y="53"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="beaconBeetrootSmall.png" width="50" height="75"/>
+        <image name="beaconIcySmall.png" width="50" height="75"/>
+        <image name="beaconLemonSmall.png" width="50" height="75"/>
+        <image name="beaconMintSmall.png" width="50" height="75"/>
+        <image name="bluetooth" width="800" height="800"/>
+    </resources>
+</document>

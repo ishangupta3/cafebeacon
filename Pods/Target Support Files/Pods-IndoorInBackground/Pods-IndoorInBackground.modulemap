@@ -1,0 +1,6 @@
+module Pods_IndoorInBackground {
+  umbrella header "Pods-IndoorInBackground-umbrella.h"
+
+  export *
+  module * { export * }
+}

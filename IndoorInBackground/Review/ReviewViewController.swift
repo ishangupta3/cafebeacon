@@ -8,7 +8,7 @@
 
 import UIKit
 import os.log
-import FirebaseDatabase
+
 import Firebase
 import UserNotifications
 
@@ -182,6 +182,7 @@ class ReviewViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         //        mealtableInstance.loadSampleMeals()
         
         let x = ReviewStruct(rating: rating, reviewText: review, location: location, date: currentDateInstance)
+        
     }
     
     func extractEntrees() { // extracting the entrees

@@ -8,18 +8,26 @@
 
 import Foundation
 import Firebase
-import FirebaseAuth
+
 import UIKit
 import UserNotifications
 
 class MainTabController: UITabBarController {
+    
+    
+    
+    let profileInstance = UserProfileController()
+    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        runNotification()
+       
+       // runNotification()
         
         let templateController = UINavigationController(rootViewController: WebViewTemplate())
         let palletesController = UINavigationController(rootViewController: WebViewPalletes())
+        let layersController = UINavigationController(rootViewController: WebViewLayers())
         let infoUserProfileController: UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "testy") as UIViewController
         
         // storyboard recommendation controller
@@ -28,40 +36,52 @@ class MainTabController: UITabBarController {
         // storyboard History Controller
         let historyProfileController: UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "historyy") as! UINavigationController
         
-        //
-        //
-        //        // History Controller
-        //        let layout = UICollectionViewFlowLayout()
-        //        let historyNavController = HomeController(collectionViewLayout: layout)
-        //        let historyProfileNavController = UINavigationController(rootViewController: historyNavController)
+        let chartViewController: UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "chart") as! UIViewController
         
         
+        let faqViewController: UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "faq") as! UIViewController
+        
+
         
         
         
         infoUserProfileController.tabBarItem.image = #imageLiteral(resourceName: "profileUnselected")
-        infoUserProfileController.title = "Profile"
+       // infoUserProfileController.title = self.profileEmail
+        
+        
+        infoUserProfileController.title = "Redeem"
         templateController.tabBarItem.image = #imageLiteral(resourceName: "template")
         templateController.title = "Templates"
         palletesController.title = "Palettes"
         palletesController.tabBarItem.image = #imageLiteral(resourceName: "salad")
         infoUserProfileController.tabBarItem.image = #imageLiteral(resourceName: "profileUnselected")
         historyProfileController.tabBarItem.image = #imageLiteral(resourceName: "historychill")
-        historyProfileController.title = "History"
+        historyProfileController.title = "Review"
+        
+        chartViewController.tabBarItem.image = #imageLiteral(resourceName: "historychill")
+        chartViewController.title = "Waiting Time "
+        
+        layersController.tabBarItem.image = #imageLiteral(resourceName: "sandwhich")
+        layersController.title = "Layers"
+        
+        
+        faqViewController.tabBarItem.image = #imageLiteral(resourceName: "historychill")
+        faqViewController.title = "Facts and Questions"
+        
+        
         // historyProfileNavController.tabBarItem.image = #imageLiteral(resourceName: "History")
         //        historyProfileNavController.title = "History"
         tabBar.tintColor = .black
         
         recommendationController.tabBarItem.image = #imageLiteral(resourceName: "suggestion")
-        recommendationController.title = "Suggestion"
+        recommendationController.title = "Suggestion - Under Development"
         
-        viewControllers = [templateController, palletesController, infoUserProfileController, historyProfileController,recommendationController]
+        viewControllers = [templateController, palletesController,layersController, historyProfileController, infoUserProfileController,chartViewController,faqViewController]
         
         guard let items = tabBar.items else { return }
         for item in items {
             //            item.imageInsets = UIEdgeInsetsMake(4, 4, -4, 0)
         }
-        
         
     }
     
@@ -88,9 +108,6 @@ class MainTabController: UITabBarController {
             //        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
     
         }
-    
-    
-    
     
     
 }

@@ -34,7 +34,7 @@ class WebViewPalletes: UIViewController, WKUIDelegate {
     
     func loadWebsite() {
         DispatchQueue.global(qos: .userInitiated).async {
-            let palletesURL = URL(string: "http://san-jose.cafebonappetit.com/cafe/palettes/")
+            let palletesURL = URL(string: "https://san-jose.cafebonappetit.com/cafe/palettes/")
             let request = URLRequest(url: palletesURL!)
             DispatchQueue.main.async { 
                 self.palletesWebView.load(request)

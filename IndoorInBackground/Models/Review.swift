@@ -7,9 +7,9 @@
 //
 
 import Foundation
-import FirebaseAuth
+
 import Firebase
-import FirebaseDatabase
+
 
 //class Review {
 //

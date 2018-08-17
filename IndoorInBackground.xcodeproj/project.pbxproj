@@ -13,17 +13,28 @@
 		A54E11C71EF00C7200897D19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A54E11C51EF00C7200897D19 /* Main.storyboard */; };
 		A54E11C91EF00C7200897D19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A54E11C81EF00C7200897D19 /* Assets.xcassets */; };
 		A54E11CC1EF00C7200897D19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A54E11CA1EF00C7200897D19 /* LaunchScreen.storyboard */; };
+		CE0103AC20FD0B0000055206 /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0103AB20FD0B0000055206 /* OnboardViewController.swift */; };
+		CE0103AF20FD112200055206 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0103AE20FD112200055206 /* Slide.xib */; };
+		CE0103B120FD114300055206 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0103B020FD114300055206 /* Slide.swift */; };
+		CE0103B320FD1C3B00055206 /* Slide2.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0103B220FD1C3B00055206 /* Slide2.xib */; };
+		CE0AD118210E42F700BF8A5D /* Slide7.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0AD117210E42F700BF8A5D /* Slide7.xib */; };
+		CE0AD11D210F7DA700BF8A5D /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0AD11C210F7DA700BF8A5D /* ChartsViewController.swift */; };
 		CE1E6A07209FF7D10075BA24 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1E6A06209FF7D10075BA24 /* Review.swift */; };
+		CE259AEE21058E4100565FF9 /* Slide3.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE259AED21058E4100565FF9 /* Slide3.xib */; };
 		CE6851CA206AE12D000C4EA2 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6851C9206AE12D000C4EA2 /* HomeController.swift */; };
 		CE6851CC206AEDC3000C4EA2 /* HomePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6851CB206AEDC3000C4EA2 /* HomePostCell.swift */; };
+		CE742BF0211A32C4003D1855 /* faqViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE742BEF211A32C4003D1855 /* faqViewController.swift */; };
 		CE746D0D206DC39A008C0F1B /* TODO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE746D0C206DC39A008C0F1B /* TODO.swift */; };
 		CE746D0F206ED579008C0F1B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE746D0E206ED579008C0F1B /* Extensions.swift */; };
 		CE74B8D4205B66D2002A7176 /* WebViewTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE74B8D3205B66D2002A7176 /* WebViewTemplate.swift */; };
 		CE74B8D7205BC088002A7176 /* WebViewPalletes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE74B8D6205BC088002A7176 /* WebViewPalletes.swift */; };
+		CE7869442108F50C00AB35D5 /* Slide6.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7869432108F50C00AB35D5 /* Slide6.xib */; };
+		CE7869462108F79500AB35D5 /* WebViewLayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7869452108F79500AB35D5 /* WebViewLayers.swift */; };
 		CEA41CBD208677EF00D2F232 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA41CBC208677EF00D2F232 /* ReviewViewController.swift */; };
 		CEA7B388209846B900D643F9 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7B387209846B900D643F9 /* Meal.swift */; };
 		CEA7B38A2098593C00D643F9 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7B3892098593C00D643F9 /* MealTableViewCell.swift */; };
 		CEA7B38C209944C100D643F9 /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7B38B209944C100D643F9 /* MealTableViewController.swift */; };
+		CEB4F40120E2CF40005F9E12 /* Incentive.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB4F40020E2CF40005F9E12 /* Incentive.swift */; };
 		CECA1F3A2040F93B001C8641 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CECA1F392040F93B001C8641 /* GoogleService-Info.plist */; };
 		CECEBD9F20512BDE007AD016 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECEBD9E20512BDE007AD016 /* MainTabController.swift */; };
 		CECEBDA120512E39007AD016 /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECEBDA020512E39007AD016 /* UserProfileController.swift */; };
@@ -32,6 +43,8 @@
 		CEDBBE602037410100E322C3 /* LoginViewControllerEstimote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDBBE5F2037410100E322C3 /* LoginViewControllerEstimote.swift */; };
 		CEDBBE622037433D00E322C3 /* PasswordReset.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDBBE612037433D00E322C3 /* PasswordReset.swift */; };
 		CEDBBE642037457800E322C3 /* FireBaseStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDBBE632037457800E322C3 /* FireBaseStruct.swift */; };
+		CEE802392107A65D00361007 /* Slide4.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE802382107A65D00361007 /* Slide4.xib */; };
+		CEE8023B2107D28500361007 /* Slide5.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE8023A2107D28500361007 /* Slide5.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,17 +58,28 @@
 		A54E11CD1EF00C7200897D19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A54E11D31EF00F8200897D19 /* ObjCBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCBridge.h; sourceTree = "<group>"; };
 		BA95F2ABE39E7911D0B67E0A /* Pods-IndoorInBackground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IndoorInBackground.release.xcconfig"; path = "Pods/Target Support Files/Pods-IndoorInBackground/Pods-IndoorInBackground.release.xcconfig"; sourceTree = "<group>"; };
+		CE0103AB20FD0B0000055206 /* OnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
+		CE0103AE20FD112200055206 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
+		CE0103B020FD114300055206 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+		CE0103B220FD1C3B00055206 /* Slide2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide2.xib; sourceTree = "<group>"; };
+		CE0AD117210E42F700BF8A5D /* Slide7.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide7.xib; sourceTree = "<group>"; };
+		CE0AD11C210F7DA700BF8A5D /* ChartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
 		CE1E6A06209FF7D10075BA24 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		CE259AED21058E4100565FF9 /* Slide3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide3.xib; sourceTree = "<group>"; };
 		CE6851C9206AE12D000C4EA2 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		CE6851CB206AEDC3000C4EA2 /* HomePostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostCell.swift; sourceTree = "<group>"; };
+		CE742BEF211A32C4003D1855 /* faqViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = faqViewController.swift; sourceTree = "<group>"; };
 		CE746D0C206DC39A008C0F1B /* TODO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODO.swift; sourceTree = "<group>"; };
 		CE746D0E206ED579008C0F1B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CE74B8D3205B66D2002A7176 /* WebViewTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewTemplate.swift; sourceTree = "<group>"; };
 		CE74B8D6205BC088002A7176 /* WebViewPalletes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewPalletes.swift; sourceTree = "<group>"; };
+		CE7869432108F50C00AB35D5 /* Slide6.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide6.xib; sourceTree = "<group>"; };
+		CE7869452108F79500AB35D5 /* WebViewLayers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewLayers.swift; sourceTree = "<group>"; };
 		CEA41CBC208677EF00D2F232 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		CEA7B387209846B900D643F9 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		CEA7B3892098593C00D643F9 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 		CEA7B38B209944C100D643F9 /* MealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
+		CEB4F40020E2CF40005F9E12 /* Incentive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Incentive.swift; sourceTree = "<group>"; };
 		CECA1F392040F93B001C8641 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		CECEBD9E20512BDE007AD016 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 		CECEBDA020512E39007AD016 /* UserProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
@@ -64,6 +88,8 @@
 		CEDBBE5F2037410100E322C3 /* LoginViewControllerEstimote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewControllerEstimote.swift; sourceTree = "<group>"; };
 		CEDBBE612037433D00E322C3 /* PasswordReset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordReset.swift; sourceTree = "<group>"; };
 		CEDBBE632037457800E322C3 /* FireBaseStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireBaseStruct.swift; sourceTree = "<group>"; };
+		CEE802382107A65D00361007 /* Slide4.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide4.xib; sourceTree = "<group>"; };
+		CEE8023A2107D28500361007 /* Slide5.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide5.xib; sourceTree = "<group>"; };
 		CEEC659A20C59E4700707C80 /* IndoorInBackground.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IndoorInBackground.entitlements; sourceTree = "<group>"; };
 		DF29B40148EA90D547F3B266 /* Pods-IndoorInBackground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IndoorInBackground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IndoorInBackground/Pods-IndoorInBackground.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,9 +135,11 @@
 		A54E11C01EF00C7200897D19 /* IndoorInBackground */ = {
 			isa = PBXGroup;
 			children = (
+				CE742BEE211A329B003D1855 /* faq */,
 				CEEC659A20C59E4700707C80 /* IndoorInBackground.entitlements */,
 				CE1E6A05209CDBF30075BA24 /* pragmatic stuff */,
 				CE1E6A04209CDB710075BA24 /* Models */,
+				CE0AD119210F7D6100BF8A5D /* Charts */,
 				CEA41CBB208677A700D2F232 /* Login */,
 				CEA41CBA2086776E00D2F232 /* Review */,
 				CE6851C8206AE116000C4EA2 /* History */,
@@ -134,11 +162,35 @@
 			path = IndoorInBackground;
 			sourceTree = "<group>";
 		};
+		CE0103AD20FD10E000055206 /* ViewOnboarding */ = {
+			isa = PBXGroup;
+			children = (
+				CE0103AE20FD112200055206 /* Slide.xib */,
+				CE0103B220FD1C3B00055206 /* Slide2.xib */,
+				CE259AED21058E4100565FF9 /* Slide3.xib */,
+				CEE802382107A65D00361007 /* Slide4.xib */,
+				CEE8023A2107D28500361007 /* Slide5.xib */,
+				CE7869432108F50C00AB35D5 /* Slide6.xib */,
+				CE0AD117210E42F700BF8A5D /* Slide7.xib */,
+				CE0103B020FD114300055206 /* Slide.swift */,
+			);
+			path = ViewOnboarding;
+			sourceTree = "<group>";
+		};
+		CE0AD119210F7D6100BF8A5D /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				CE0AD11C210F7DA700BF8A5D /* ChartsViewController.swift */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
 		CE1E6A04209CDB710075BA24 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				CEA7B387209846B900D643F9 /* Meal.swift */,
 				CE1E6A06209FF7D10075BA24 /* Review.swift */,
+				CEB4F40020E2CF40005F9E12 /* Incentive.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -161,11 +213,20 @@
 			path = History;
 			sourceTree = "<group>";
 		};
+		CE742BEE211A329B003D1855 /* faq */ = {
+			isa = PBXGroup;
+			children = (
+				CE742BEF211A32C4003D1855 /* faqViewController.swift */,
+			);
+			path = faq;
+			sourceTree = "<group>";
+		};
 		CE74B8D5205B66E4002A7176 /* Webviews */ = {
 			isa = PBXGroup;
 			children = (
 				CE74B8D3205B66D2002A7176 /* WebViewTemplate.swift */,
 				CE74B8D6205BC088002A7176 /* WebViewPalletes.swift */,
+				CE7869452108F79500AB35D5 /* WebViewLayers.swift */,
 			);
 			path = Webviews;
 			sourceTree = "<group>";
@@ -182,7 +243,9 @@
 		CEA41CBB208677A700D2F232 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				CE0103AD20FD10E000055206 /* ViewOnboarding */,
 				CEDBBE5F2037410100E322C3 /* LoginViewControllerEstimote.swift */,
+				CE0103AB20FD0B0000055206 /* OnboardViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -217,7 +280,6 @@
 				A54E11BA1EF00C7200897D19 /* Sources */,
 				A54E11BB1EF00C7200897D19 /* Frameworks */,
 				A54E11BC1EF00C7200897D19 /* Resources */,
-				ED32E0A7E1B8B8927FD01EC9 /* [CP] Embed Pods Frameworks */,
 				11456D5DF52D574C53C60608 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -277,9 +339,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE8023B2107D28500361007 /* Slide5.xib in Resources */,
+				CEE802392107A65D00361007 /* Slide4.xib in Resources */,
+				CE0103B320FD1C3B00055206 /* Slide2.xib in Resources */,
+				CE0103AF20FD112200055206 /* Slide.xib in Resources */,
 				A54E11CC1EF00C7200897D19 /* LaunchScreen.storyboard in Resources */,
 				CECA1F3A2040F93B001C8641 /* GoogleService-Info.plist in Resources */,
 				A54E11C91EF00C7200897D19 /* Assets.xcassets in Resources */,
+				CE0AD118210E42F700BF8A5D /* Slide7.xib in Resources */,
+				CE259AEE21058E4100565FF9 /* Slide3.xib in Resources */,
+				CE7869442108F50C00AB35D5 /* Slide6.xib in Resources */,
 				A54E11C71EF00C7200897D19 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,10 +399,47 @@
 				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconWhiteSmall.png",
 				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconWhiteSmall@2x.png",
 				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconWhiteSmall@3x.png",
+				"${PODS_ROOT}/FAQView/Source/Supporting files/Assets.xcassets",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/avatar.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/avatar@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/avatar@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/avatar_noarrow.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/avatar_noarrow@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/avatar_noarrow@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/beaconBeetrootSmall.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/beaconBeetrootSmall@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/beaconBeetrootSmall@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/beaconBlackSmall.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/beaconBlackSmall@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/beaconBlackSmall@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/beaconBlueberrySmall.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/beaconBlueberrySmall@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/beaconBlueberrySmall@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/beaconCandySmall.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/beaconCandySmall@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/beaconCandySmall@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/beaconGreySmall.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/beaconGreySmall@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/beaconGreySmall@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/beaconIcySmall.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/beaconIcySmall@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/beaconIcySmall@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/beaconLemonSmall.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/beaconLemonSmall@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/beaconLemonSmall@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/beaconMintSmall.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/beaconMintSmall@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/beaconMintSmall@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/beaconTransparentSmall.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/beaconTransparentSmall@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/beaconTransparentSmall@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/beaconWhiteSmall.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/beaconWhiteSmall@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/beaconWhiteSmall@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Assets.car",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -372,21 +478,6 @@
 			shellPath = /bin/sh;
 			shellScript = "tags=\"TODO:\"\nmatches=`find \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($tags).*\\$\"`\necho \"$matches\" | perl -p -e \"s/($tags)/ error: \\$1/\"\n[ -z \"$matches\" ] || exit 1";
 		};
-		ED32E0A7E1B8B8927FD01EC9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IndoorInBackground/Pods-IndoorInBackground-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -395,9 +486,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEDBBE622037433D00E322C3 /* PasswordReset.swift in Sources */,
+				CE0AD11D210F7DA700BF8A5D /* ChartsViewController.swift in Sources */,
+				CE0103B120FD114300055206 /* Slide.swift in Sources */,
+				CE742BF0211A32C4003D1855 /* faqViewController.swift in Sources */,
 				A54E11C41EF00C7200897D19 /* ViewController.swift in Sources */,
 				CE6851CA206AE12D000C4EA2 /* HomeController.swift in Sources */,
 				CEA7B388209846B900D643F9 /* Meal.swift in Sources */,
+				CE0103AC20FD0B0000055206 /* OnboardViewController.swift in Sources */,
 				CECEBDA42052897C007AD016 /* HelpfulHelpers.swift in Sources */,
 				CE1E6A07209FF7D10075BA24 /* Review.swift in Sources */,
 				CEDA308720872524007D1D4F /* RatingControl.swift in Sources */,
@@ -413,7 +508,9 @@
 				CEA7B38C209944C100D643F9 /* MealTableViewController.swift in Sources */,
 				CEDBBE602037410100E322C3 /* LoginViewControllerEstimote.swift in Sources */,
 				CE74B8D7205BC088002A7176 /* WebViewPalletes.swift in Sources */,
+				CEB4F40120E2CF40005F9E12 /* Incentive.swift in Sources */,
 				CE746D0F206ED579008C0F1B /* Extensions.swift in Sources */,
+				CE7869462108F79500AB35D5 /* WebViewLayers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +583,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -529,6 +627,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -540,6 +639,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = IndoorInBackground/IndoorInBackground.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VFH547A942;
@@ -560,6 +660,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = IndoorInBackground/IndoorInBackground.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VFH547A942;

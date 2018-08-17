@@ -6,8 +6,6 @@
 import UIKit
 import UserNotifications
 import Firebase
-import FirebaseAuth
-import FirebaseDatabase
 
 
 @UIApplicationMain
@@ -38,9 +36,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, EILBackgroundIndoorLocati
         
        
         FirebaseApp.configure()
-        ESTConfig.setupAppID("caf-7az", andAppToken:"23c0e2454af572312419045a789a6340")
+        ESTConfig.setupAppID("final-version-id-lf0", andAppToken:"de1ecbedb98044d6fbf8ad35f19200bf")
         
-        
+      
         self.backgroundIndoorLocationManager = EILBackgroundIndoorLocationManager()
         self.backgroundIndoorLocationManager.delegate = self
         
@@ -57,8 +55,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, EILBackgroundIndoorLocati
             self.window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
         }
         
-        self.requestNecessaryPermissions()
+      //  self.requestNecessaryPermissions() // this is where location is being asked from the user
+        
+        
         self.fetchLocationAndStartPositioninig()
+    
         
         
 //        window = UIWindow()
@@ -68,6 +69,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, EILBackgroundIndoorLocati
         return true
     }
     
+
+    
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         print("registered for notifications", deviceToken)
@@ -76,13 +79,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, EILBackgroundIndoorLocati
     func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
         let ref = Database.database().reference().child("tokens").child(Auth.auth().currentUser?.uid ?? "error")
         ref.setValue(fcmToken)
+        
+//        let ref2 = Database.database().reference().child("users").child(Auth.auth().currentUser?.uid ?? "error")
+//        ref2.setValue("ishangupta3@gmail.com")
+        
         print("Registered with FCM Token", fcmToken)
     }
     
-    private func attemptRegisterNotifications(application: UIApplication) {
+            func attemptRegisterNotifications(application: UIApplication) {
         print("attempting to register notifications")
-        
-        
         Messaging.messaging().delegate = self
         // user authorization notif
         
@@ -94,7 +99,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, EILBackgroundIndoorLocati
             }
             
             if granted {
-                print("granted")
+                print("testing granted")
             } else {
                 print("not granted")
             }
@@ -107,13 +112,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, EILBackgroundIndoorLocati
     func requestNecessaryPermissions() {
         
         // In order to relaunch the application (if it is killed by operating system or user) as the user enters the location “Always in use” Location Services authorization is required.
-        self.backgroundIndoorLocationManager.requestAlwaysAuthorization()
+   
         
         // In this example notifications are used for showing the current position, but are not required for Indoor Location to work
         let notificationOptions: UNAuthorizationOptions = [.alert, .sound];
         UNUserNotificationCenter.current().requestAuthorization(options: notificationOptions) { (granted, error) in
             if !granted {
                 print("notification permission not granted")
+                self.requestNecessaryPermissions()
             }
         }
     }
@@ -137,6 +143,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, EILBackgroundIndoorLocati
                 self.backgroundIndoorLocationManager.startPositionUpdates(for: location)
                 print(location, "this is the location for templates")
             } else {
+                 let estimoterror = Database.database().reference().child("Error").child((Auth.auth().currentUser?.uid)!)
+                estimoterror.childByAutoId().setValue(error)
+                
                 print("can't fetch location: \(error!)")
             }
             UIApplication.shared.endBackgroundTask(self.fetchLocationTask)
@@ -150,6 +159,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate, EILBackgroundIndoorLocati
                 self.backgroundIndoorLocationManager.startPositionUpdates(for: location)
             } else {
                 print("can't fetch location: \(error!)")
+                let estimoterror = Database.database().reference().child("Error").child((Auth.auth().currentUser?.uid)!)
+                estimoterror.childByAutoId().setValue(error)
+            }
+            UIApplication.shared.endBackgroundTask(self.fetchLocationTask)
+            self.fetchLocationTask = UIBackgroundTaskInvalid
+        }
+        
+        
+        let fetchLocationLayers = EILRequestFetchLocation(locationIdentifier: "layers")
+        fetchLocationLayers.sendRequest { (location, error) in
+            if let location = location {
+                print(location, "THIS IS THE LOCATION")
+                self.backgroundIndoorLocationManager.startPositionUpdates(for: location)
+            } else {
+                print("can't fetch location: \(error!)")
+                let estimoterror = Database.database().reference().child("Error").child((Auth.auth().currentUser?.uid)!)
+                estimoterror.childByAutoId().setValue(error)
             }
             UIApplication.shared.endBackgroundTask(self.fetchLocationTask)
             self.fetchLocationTask = UIBackgroundTaskInvalid
@@ -168,12 +194,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, EILBackgroundIndoorLocati
         
         print(location.name)
       
-            if  location.name == "TESTpalletes123" {
+            if  location.name == "boomboom" {
                 _ = FirebaseStruct(user: (Auth.auth().currentUser?.uid)!, timestamp: Int(Date().timeIntervalSince1970), xCoordinate: position.x, yCoordinate: position.y , location: "Palletes")
             }
             if location.name == "templates4" {
                 _ = FirebaseStruct(user: (Auth.auth().currentUser?.uid)!, timestamp: Int(Date().timeIntervalSince1970), xCoordinate: position.x, yCoordinate: position.y , location: "Templates")
             }
+        
+        if location.name == "layers" {
+            print("currently in layers")
+            _ = FirebaseStruct(user: (Auth.auth().currentUser?.uid)!, timestamp: Int(Date().timeIntervalSince1970), xCoordinate: position.x, yCoordinate: position.y , location: "Layers")
+        }
     
     
         
